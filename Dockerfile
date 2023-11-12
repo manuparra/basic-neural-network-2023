@@ -12,7 +12,5 @@ USER $NB_USER
 RUN cd /opt/install && \
     conda env update -n base --file environment.yml && \
     mv /opt/conda/.condarc /opt/conda/.condarc.bak && \
-    wget --output-document basic-neural-network-2023.env.yml https://github.com/manuparra/basic-neural-network-2023/blob/main/environment.yml && \
-    conda env update -n base --file basic-neural-network-2023.env.yml && \
     conda install --yes -c conda-forge nbgitpuller git && \
     conda clean --all --yes
