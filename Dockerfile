@@ -10,5 +10,6 @@ RUN cd "/home/${NB_USER}"; git clone https://github.com/iaa-so-training/basic-ne
 COPY --chown=${NB_UID}:${NB_GID} environment.yml /tmp/
 RUN mamba install --yes --file /tmp/environment.yml && \
     mamba clean --all -f -y && \
+    conda activate iaa_nn && \
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}"
