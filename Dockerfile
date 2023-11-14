@@ -1,5 +1,5 @@
 FROM quay.io/jupyter/base-notebook
-
+RUN apt-get install -y vim git
 RUN mamba install --yes 'flake8' && \
     mamba clean --all -f -y && \
     fix-permissions "${CONDA_DIR}" && \
