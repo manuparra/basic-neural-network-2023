@@ -8,7 +8,7 @@ Deep learning (DL) is a family of techniques widely used in multiple fields with
 The tutor of this school is Dr Francisco Eduardo Sanchez Karhunen (Universidad de Sevilla).
 
 **Summary of Contents**
-
+- Introduction 
 - Session 1: Deep Learning fundamentals
 - Session 2: Convolutional Neural Networks fundamentals
 - Session 3: Practical considerations in real-world CNNs
